@@ -1,10 +1,11 @@
 import React from 'react';
-
+import { BrowserRouter } from 'react-router-dom'
+import Teste from './routes'
 function App() {
   return (
-    <div className="App">
-      <h1>Code Tasks</h1>
-    </div>
+    <BrowserRouter>
+      <Teste />
+    </BrowserRouter>
   );
 }
 
