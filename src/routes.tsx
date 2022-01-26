@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Tasks from './pages/Tasks'
 
-const Teste: React.FC = () => {
+const RouteTask: React.FC = () => {
     return (
         <Routes>
             <Route path="/" element={<Home/>} />
@@ -12,4 +12,4 @@ const Teste: React.FC = () => {
     );
 }
 
-export default Teste;
+export default RouteTask;

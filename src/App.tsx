@@ -1,10 +1,13 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom'
-import Teste from './routes'
+import RouteTask from './routes'
+import Header from './components/Header'
+
 function App() {
   return (
     <BrowserRouter>
-      <Teste />
+      <Header />
+      <RouteTask />
     </BrowserRouter>
   );
 }
