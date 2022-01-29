@@ -1,23 +1,17 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
-const Tasks: React.FC = () => {
+const Header: React.FC = () => {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="dark" variant="dark" expand="lg">
             <Container>
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                <Navbar.Brand href="#home">Code83 - Tasks</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
-                        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                        </NavDropdown>
+                        <Nav.Item as={Link} className= "nav-link" to="/">Início </Nav.Item>
+                        <Nav.Item as={Link} className= "nav-link"to="/tarefas"> Tarefas</Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
@@ -25,4 +19,4 @@ const Tasks: React.FC = () => {
     );
 }
 
-export default Tasks;
+export default Header;
